@@ -20,39 +20,58 @@ documento de HTML-->
 
     <h1>Musical Fati</h1>
     <p class= "pmusical">Musical para Navidad</p>
-
+<!-- 
      <div class="lista-canciones">
      <!--CANCIÓN 1-->
-     <div class="canciones">
+    <!--  <div class="canciones">
         <p>💕 Mistleoe</p>
-          <audio controls class="audio-player">
+          <audio controls class="audio-player"> -->
                     <!-- Mp3 de prueba 1 -->
-                    <source src="Mistletoe.mp3" type="audio/mpeg">
+                   <!--  <source src="Mistletoe.mp3" type="audio/mpeg">
                 </audio>
      </div>
-
+ -->
      <!--CANCIÓN 2-->
-     <div class="canciones">
+     <!-- <div class="canciones">
         <p>⭐ Sweet Dreams </p>
           <audio controls class="audio-player">
                     <!-- Mp3 de prueba 1 -->
-                    <source src="SweetDreams.mp3" type="audio/mpeg">
+                   <!--  <source src="SweetDreams.mp3" type="audio/mpeg">
                 </audio>
-     </div>
-
+     </div> -->
+ 
      <!--CANCIÓN 3-->
-     <div class="canciones">
+     <!-- <div class="canciones">
         <p>🌲Last Christmas</p>
-          <audio controls class="audio-player">
+          <audio controls class="audio-player"> -->
                     <!-- Mp3 de prueba 1 -->
-                    <source src="Last Christmas.mp3" type="audio/mpeg">
+                    <!-- <source src="Last Christmas.mp3" type="audio/mpeg">
                 </audio>
      </div>
 
 
-   </div>
+   </div> --> 
+ 
+<!-- UNA SOLA CAJA DE REPRODUCTOR -->
+      <div class="canciones">
+        <!-- 1. Le ponemos id="nombre-cancion" para que JS cambie el texto -->
+        <p id="nombre-cancion">💕 Mistleoe</p>
+        
+        <!--  Un solo audio con id="audio-player" -->
+        <audio id="audio-player" controls class="audio-player">
+          <source src="Mistletoe.mp3" type="audio/mpeg">
+        </audio>
+
+
+        <!-- Agregamos los botones para avanzar y retroceder -->
+        <div class="controles">
+          <button id="btn-anterior">⏮ Anterior</button>
+          <button id="btn-siguiente">Siguiente ⏭</button>
+        </div>
+      </div>
 
  </div>
 
+ <script src="script.js"></script>
 </body>
 </html>
